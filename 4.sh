@@ -6,7 +6,6 @@ sum=0
 for (( i = 0; i < ${#num}; i++));
 do
 	digit=${num:$i:1}
-	echo $digit
 	sum=$(($sum + ($digit * $digit * $digit)))
 done
 
