@@ -1,7 +1,9 @@
 #!/bin/bash
 
-solve() {
-	expr $1 + $2
-}
-
-solve 5 3
+a=5
+b=3
+expr $a + $b
+expr $a - $b
+expr $a \* $b
+expr $a / $b
+expr $a % $b

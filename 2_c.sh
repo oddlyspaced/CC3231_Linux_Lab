@@ -1,7 +1,10 @@
 #!/bin/bash
 
-solve() {
-	expr $1 + $2
-}
+a=$1
+b=$2
 
-solve $1 $2
+expr $a + $b
+expr $a - $b
+expr $a \* $b
+expr $a / $b
+expr $a % $b
