@@ -3,7 +3,7 @@
 num=$1
 sum=1
 
-for (( i = 1; i <= $num; i++ ));
+for i in $(seq 1 $num);
 do
 	sum=$(( $sum * $i ))
 done
