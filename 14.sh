@@ -2,7 +2,6 @@
 
 dir=$1
 
-count=$(ls -l | wc -l)
-count=$(( $count - 1 ))
+count=$(find $1 -maxdepth 1 -not -type d | wc -l)
 
 echo $count
