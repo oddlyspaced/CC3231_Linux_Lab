@@ -1,11 +1,11 @@
 #!/bin/bash
 
-num=$1
+num=$(( $1 - 1 ))
 
-for (( i = 2; i < $num; i++ ));
+for i in $(seq 2 $num);
 do
-	rem=$(( $num % $i ))
-	if [ "$rem" = "0" ];
+	rem=$(( $1 % $i ))
+	if [ $rem -eq "0" ];
 	then
 		echo "Not Prime"
 		exit 0
