@@ -1,7 +1,7 @@
 #!/bin/bash
 
-p=$1
-r=$2
-t=$3
+echo "Enter P R T"
+
+read p r t
 si=$(( ($p * $r * $t) / 100))
 echo $si
