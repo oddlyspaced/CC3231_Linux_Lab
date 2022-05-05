@@ -6,7 +6,7 @@ sum=0
 for (( i = 0; i < ${#num}; i++));
 do
 	digit=${num:$i:1}
-	sum=$(($sum + $digit ** ${#num})))
+	sum=$(($sum + ($digit * $digit * $digit)))
 done
 
 if [ "$sum" = "$num" ]; then
